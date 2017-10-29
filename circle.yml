@@ -1,0 +1,14 @@
+
+general:
+  branches:
+    ignore:
+      - gh-pages
+machine:
+  timezone: Asia/Tokyo
+  node:
+    version: 8.5.0
+
+test:
+  override:
+    - npm test
+    - cp ./ss.png $CIRCLE_ARTIFACTS/ss.png
