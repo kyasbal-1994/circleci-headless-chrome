@@ -11,4 +11,3 @@ machine:
 test:
   override:
     - npm test
-    - cp ./ss.png $CIRCLE_ARTIFACTS/ss.png
