@@ -1,5 +1,7 @@
 {
     "presets": [
         "node6"
-    ]
+    ],
+    "sourceMaps": true,
+    "sourceRoot": "./"
 }
