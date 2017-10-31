@@ -50,7 +50,11 @@ function downloadPrevious(folder: string) {
 }
 
 function diff(fileName: string) {
-    console.log(execSync(`sh -x diff.sh ${fileName}`).toString());
+    try {
+        console.log(execSync(`sh -x diff.sh ${fileName}`).toString());
+    } catch (e) {
+        console.warn(`${fileName} has different pixels.`);
+    }
 }
 
 async function captureWithPage(page: Page, config: IE2ETest) {
