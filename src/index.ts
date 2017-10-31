@@ -34,7 +34,7 @@ async function test() {
 }
 
 async function sendToS3(folder: string) {
-    process.env.mode = folder;
+    process.env.DESTINATION_FOLDER = folder;
 }
 
 async function captureWithPage(page: Page, config: IE2ETest) {
