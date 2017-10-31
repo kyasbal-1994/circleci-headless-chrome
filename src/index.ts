@@ -28,8 +28,14 @@ async function test() {
     const page = await browser.newPage();
     const config = await ConfigParser.loadAll();
     const filteredConfig = config.filter((v, i) => (i % nodeTotal) === nodeIndex);
+    let logs = [];
+    page.on("console", (e) => {
+        logs.push(e);
+    });
     for (let i = 0; i < filteredConfig.length; i++) {
         await captureWithPage(page, filteredConfig[i]);
+        console.log(logs);
+        logs.splice(0, logs.length);
     }
     await browser.close();
     const trigger: any = await readTrigger();
