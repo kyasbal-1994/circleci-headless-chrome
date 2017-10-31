@@ -32,6 +32,7 @@ async function test() {
     page.on("console", (e) => {
         logs.push(e);
     });
+    execSync("mkdir $CIRCLE_ARTIFACTS/current")
     for (let i = 0; i < filteredConfig.length; i++) {
         await captureWithPage(page, filteredConfig[i]);
         console.log(logs);
