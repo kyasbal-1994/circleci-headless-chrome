@@ -34,16 +34,7 @@ async function test() {
 }
 
 async function sendToS3(folder: string) {
-    return new Promise((resolve, reject) => {
-        exec(`aws s3 cp $CIRCLE_ARTIFACTS/ s3://$S3_BUCKET_URL/ss/${folder}--recursive --acl public-read`, (err, stdout, stderr) => {
-            if (err) {
-                reject(err);
-            } else {
-                console.log(`[LOG]${stdout}`);
-                console.error(`[ERROR]${stderr}`);
-            }
-        });
-    });
+    process.env.mode = folder;
 }
 
 async function captureWithPage(page: Page, config: IE2ETest) {
