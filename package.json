@@ -11,6 +11,7 @@
   "author": "kyasbal",
   "license": "MIT",
   "devDependencies": {
+    "@types/axios": "^0.14.0",
     "@types/glob": "^5.0.33",
     "@types/js-yaml": "^3.9.1",
     "@types/puppeteer": "^0.12.1",

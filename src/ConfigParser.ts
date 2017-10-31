@@ -6,7 +6,9 @@ import IE2ETestRecipe from "./IE2ETestRecipe";
 const defaultConfig = {
     url: "",
     timeout: 100000,
-    waitFor: null
+    waitFor: null,
+    width: 640,
+    height: 480
 } as IE2ETest;
 export default class ConfigParser {
 
@@ -18,12 +20,10 @@ export default class ConfigParser {
             const tests = await this.loadFrom(files[index], name);
             result[name] = tests;
         }));
-        console.log(result);
         let tests = [] as IE2ETest[];
         for (let resultKey in result) {
             result[resultKey].forEach((r) => tests.push(r));
         }
-        console.log(tests);
         return tests;
     }
 

@@ -4,4 +4,6 @@ export default interface IE2ETest {
     waitFor?: number | string | null;
     group?: string;
     name?: string;
+    width?: number;
+    height?: number;
 }
