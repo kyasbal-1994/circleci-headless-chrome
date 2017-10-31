@@ -77,7 +77,7 @@ async function captureWithPage(page: Page, config: IE2ETest) {
         await page.waitFor(config.waitFor);
         console.log(`--> Waiting for custom waiting criteria ${Date.now() - beginTime}ms`);
     }
-    await page.screenshot({ path: join(exportDir, config.group + config.name + ".png"), type: "png" });
+    await page.screenshot({ path: join(exportDir, "current", config.group + config.name + ".png"), type: "png" });
 }
 
 test();
