@@ -13,3 +13,6 @@ test:
   override:
     - npm test:
         parallel: true
+    - >-
+      aws s3 cp $CIRCLE_ARTIFACTS/ s3://$S3_BUCKET_URL/ss/test --recursive --acl
+      public-read
