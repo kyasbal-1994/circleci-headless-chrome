@@ -35,6 +35,10 @@ async function test() {
     const trigger: any = await readTrigger();
     sendToS3(trigger.destination);
     downloadPrevious(trigger.previous);
+    for (let i = 0; i < filteredConfig.length; i++) {
+        const config = filteredConfig[i];
+        diff(join(exportDir, config.group + config.name + ".png"))
+    }
 }
 
 function sendToS3(folder: string) {
@@ -43,6 +47,10 @@ function sendToS3(folder: string) {
 
 function downloadPrevious(folder: string) {
     console.log(execSync(`sh download.sh ${folder}`).toString());
+}
+
+function diff(fileName: string) {
+    console.log(execSync(`sh diff.sh ${fileName}`).toString());
 }
 
 async function captureWithPage(page: Page, config: IE2ETest) {
