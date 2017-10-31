@@ -42,15 +42,15 @@ async function test() {
 }
 
 function sendToS3(folder: string) {
-    console.log(execSync(`sh upload.sh ${folder}`).toString());
+    console.log(execSync(`sh -x upload.sh ${folder}`).toString());
 }
 
 function downloadPrevious(folder: string) {
-    console.log(execSync(`sh download.sh ${folder}`).toString());
+    console.log(execSync(`sh -x download.sh ${folder}`).toString());
 }
 
 function diff(fileName: string) {
-    console.log(execSync(`sh diff.sh ${fileName}`).toString());
+    console.log(execSync(`sh -x diff.sh ${fileName}`).toString());
 }
 
 async function captureWithPage(page: Page, config: IE2ETest) {
