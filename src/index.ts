@@ -37,7 +37,7 @@ async function test() {
     downloadPrevious(trigger.previous);
     for (let i = 0; i < filteredConfig.length; i++) {
         const config = filteredConfig[i];
-        diff(join(exportDir, config.group + config.name + ".png"))
+        diff(config.group + config.name + ".png")
     }
 }
 
