@@ -2,7 +2,7 @@ import { launch, Page } from "puppeteer";
 import { join } from "path";
 import ConfigParser from "./ConfigParser";
 import IE2ETest from "./IE2ETest";
-import { exec } from "child_process";
+import { execSync } from "child_process";
 import { readFile } from "fs";
 const exportDir: string = process.env.CIRCLE_ARTIFACTS || "ss";
 const nodeTotal: number = Number.parseInt(process.env.CIRCLE_NODE_TOTAL) || 1;
@@ -30,11 +30,11 @@ async function test() {
     }
     await browser.close();
     const trigger: any = await readTrigger();
-    await sendToS3(trigger.destination);
+    sendToS3(trigger.destination);
 }
 
-async function sendToS3(folder: string) {
-    process.env.DESTINATION_FOLDER = folder;
+function sendToS3(folder: string) {
+    console.log(execSync(`sh upload.sh ${folder}`).toString());
 }
 
 async function captureWithPage(page: Page, config: IE2ETest) {

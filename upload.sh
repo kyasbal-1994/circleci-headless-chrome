@@ -1,0 +1,1 @@
+aws s3 cp $CIRCLE_ARTIFACTS/ s3://$S3_BUCKET_URL/ss/$1 --recursive --acl public-read
