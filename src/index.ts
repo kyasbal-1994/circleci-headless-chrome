@@ -4,6 +4,7 @@ import ConfigParser from "./ConfigParser";
 import IE2ETest from "./IE2ETest";
 import { execSync } from "child_process";
 import { readFile } from "fs";
+import DiffMaker from "./DiffMaker";
 const exportDir: string = process.env.CIRCLE_ARTIFACTS || "ss";
 const nodeTotal: number = Number.parseInt(process.env.CIRCLE_NODE_TOTAL) || 1;
 const nodeIndex: number = Number.parseInt(process.env.CIRCLE_NODE_INDEX) || 0;
@@ -21,6 +22,8 @@ async function readTrigger() {
     });
 }
 async function test() {
+    // await DiffMaker.makeDiff("./ss/generalaxis.png", "./ss/generalparticles.png");
+    // return;
     const browser = await launch({ headless: false });
     const page = await browser.newPage();
     const config = await ConfigParser.loadAll();
@@ -31,10 +34,15 @@ async function test() {
     await browser.close();
     const trigger: any = await readTrigger();
     sendToS3(trigger.destination);
+    downloadPrevious(trigger.previous);
 }
 
 function sendToS3(folder: string) {
     console.log(execSync(`sh upload.sh ${folder}`).toString());
+}
+
+function downloadPrevious(folder: string) {
+    console.log(execSync(`sh download.sh ${folder}`).toString());
 }
 
 async function captureWithPage(page: Page, config: IE2ETest) {

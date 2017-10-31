@@ -1,0 +1,1 @@
+aws s3 cp s3://$S3_BUCKET_URL/ss/$1 $CIRCLE_ARTIFACTS/previous --recursive
