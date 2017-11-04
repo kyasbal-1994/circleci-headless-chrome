@@ -62,6 +62,7 @@ async function test() {
         const config = filteredConfig[i];
         diff(config.group + config.name)
     }
+    execSync(`sh -x ./request-result.sh ${trigger.repository}`)
 }
 
 function sendToS3(folder: string) {

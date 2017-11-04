@@ -1,0 +1,1 @@
+curl -X POST -d "buildNumber=$CIRCLE_BUILD_NUM" -d "repository=$1" $TRIGGER_URL
