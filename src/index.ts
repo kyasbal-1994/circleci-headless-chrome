@@ -24,7 +24,7 @@ async function readTrigger() {
 
 async function writeJSON(path: string, content: any) {
     return new Promise((resolve, reject) => {
-        writeFile(path, JSON.stringify(content), (err) => {
+        writeFile(path, JSON.stringify(content, null, 2), (err) => {
             if (err) {
                 reject(err)
             } else {
@@ -37,12 +37,17 @@ async function test() {
     const browser = await launch({ headless: false });
     const page = await browser.newPage();
     const config = await ConfigParser.loadAll();
+    await writeJSON(join(exportDir, "e2e.json"), config);
     const filteredConfig = config.filter((v, i) => (i % nodeTotal) === nodeIndex);
     let logs = [];
     page.on("console", (e) => {
-        logs.push(e);
+        logs.push({
+            type: e.type,
+            text: e.text
+        });
     });
-    execSync(`mkdir ${exportDir}/current`)
+    execSync(`mkdir -p ${exportDir}/current`)
+    execSync(`mkdir -p ${exportDir}/meta`)
     for (let i = 0; i < filteredConfig.length; i++) {
         await captureWithPage(page, filteredConfig[i], logs);
         logs.splice(0, logs.length);
@@ -91,7 +96,7 @@ async function captureWithPage(page: Page, config: IE2ETest, logs: any[]) {
         console.log(`--> Waiting for custom waiting criteria ${initializingTime}ms`);
     }
     await page.screenshot({ path: join(exportDir, "current", config.group + config.name + ".png"), type: "png" });
-    await writeJSON(join(exportDir, "meta", config.group + config.name + ".png"), {
+    await writeJSON(join(exportDir, "meta", config.group + config.name + ".json"), {
         config,
         loadTime,
         initializingTime,
