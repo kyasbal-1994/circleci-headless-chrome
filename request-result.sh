@@ -1,1 +1,1 @@
-curl -X POST -d "buildNumber=$CIRCLE_BUILD_NUM"
+curl -X POST -d "buildNumber=$CIRCLE_BUILD_NUM" $TRIGGER_URL
