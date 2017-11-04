@@ -38,7 +38,9 @@ async function test() {
     const page = await browser.newPage();
     const config = await ConfigParser.loadAll();
     const trigger: any = await readTrigger();
-    await writeJSON(join(exportDir, "e2e.json"), { config, trigger });
+    if (nodeIndex === 0) {
+        await writeJSON(join(exportDir, "e2e.json"), { config, trigger });
+    }
     const filteredConfig = config.filter((v, i) => (i % nodeTotal) === nodeIndex);
     let logs = [];
     page.on("console", (e) => {
