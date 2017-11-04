@@ -10,9 +10,9 @@ const nodeTotal: number = Number.parseInt(process.env.CIRCLE_NODE_TOTAL) || 1;
 const nodeIndex: number = Number.parseInt(process.env.CIRCLE_NODE_INDEX) || 0;
 const artifactoryURL = process.env.ARTIFACTORY_URL;
 
-async function readTrigger() {
+async function readJSON(path: string) {
     return new Promise((resolve, reject) => {
-        readFile("trigger.json", "utf-8", (err, data) => {
+        readFile(path, "utf-8", (err, data) => {
             if (err) {
                 reject(err);
             } else {
@@ -37,7 +37,7 @@ async function test() {
     const browser = await launch({ headless: false });
     const page = await browser.newPage();
     const config = await ConfigParser.loadAll();
-    const trigger: any = await readTrigger();
+    const trigger: any = await readJSON("trigger.json");
     if (nodeIndex === 0) {
         await writeJSON(join(exportDir, "e2e.json"), { config, trigger });
     }
@@ -60,7 +60,7 @@ async function test() {
     downloadPrevious(trigger.previous);
     for (let i = 0; i < filteredConfig.length; i++) {
         const config = filteredConfig[i];
-        diff(config.group + config.name + ".png")
+        diff(config.group + config.name)
     }
 }
 
@@ -72,11 +72,13 @@ function downloadPrevious(folder: string) {
     console.log(execSync(`sh -x download.sh ${folder}`).toString());
 }
 
-function diff(fileName: string) {
+async function diff(fileNameWithoutExt: string) {
     try {
-        console.log(execSync(`sh -x diff.sh ${fileName}`).toString());
+        console.log(execSync(`sh -x diff.sh ${fileNameWithoutExt + ".png"}`).toString());
     } catch (e) {
-        console.warn(`${fileName} has different pixels.`);
+        const data = await readJSON(join(exportDir, "meta", fileNameWithoutExt + ".json")) as any;
+        data.diffTestResult = false;
+        await writeJSON(join(exportDir, "meta", fileNameWithoutExt + ".json"), data);
     }
 }
 
@@ -102,7 +104,8 @@ async function captureWithPage(page: Page, config: IE2ETest, logs: any[]) {
         config,
         loadTime,
         initializingTime,
-        logs
+        logs,
+        diffTestResult: true
     });
 }
 
