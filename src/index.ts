@@ -3,7 +3,7 @@ import { join } from "path";
 import ConfigParser from "./ConfigParser";
 import IE2ETest from "./IE2ETest";
 import { execSync } from "child_process";
-import { readFile } from "fs";
+import { readFile, writeFile } from "fs";
 import DiffMaker from "./DiffMaker";
 const exportDir: string = process.env.CIRCLE_ARTIFACTS || "ss";
 const nodeTotal: number = Number.parseInt(process.env.CIRCLE_NODE_TOTAL) || 1;
@@ -21,9 +21,19 @@ async function readTrigger() {
         })
     });
 }
+
+async function writeJSON(path: string, content: any) {
+    return new Promise((resolve, reject) => {
+        writeFile(path, JSON.stringify(content), (err) => {
+            if (err) {
+                reject(err)
+            } else {
+                resolve();
+            }
+        })
+    });
+}
 async function test() {
-    // await DiffMaker.makeDiff("./ss/generalaxis.png", "./ss/generalparticles.png");
-    // return;
     const browser = await launch({ headless: false });
     const page = await browser.newPage();
     const config = await ConfigParser.loadAll();
@@ -34,8 +44,7 @@ async function test() {
     });
     execSync(`mkdir ${exportDir}/current`)
     for (let i = 0; i < filteredConfig.length; i++) {
-        await captureWithPage(page, filteredConfig[i]);
-        console.log(logs);
+        await captureWithPage(page, filteredConfig[i], logs);
         logs.splice(0, logs.length);
     }
     await browser.close();
@@ -64,21 +73,30 @@ function diff(fileName: string) {
     }
 }
 
-async function captureWithPage(page: Page, config: IE2ETest) {
+async function captureWithPage(page: Page, config: IE2ETest, logs: any[]) {
+    let loadTime: number, initializingTime: number;
     await page.setViewport({ width: config.width, height: config.height });
     console.log(`[E2E TEST (${config.group} - ${config.name})] (${config.url})`);
     let beginTime = Date.now();
     await page.goto(config.url);
-    console.log(`--> Loaded in ${Date.now() - beginTime}ms`);
+    loadTime = Date.now() - beginTime;
+    console.log(`--> Loaded in ${loadTime}ms`);
     beginTime = Date.now();
     await page.waitFor("canvas.gr-resource-loaded-canvas");
     console.log(`--> Grimoire.js got ready state to render in ${Date.now() - beginTime}ms`);
     if (config.waitFor !== null) {
         beginTime = Date.now();
         await page.waitFor(config.waitFor);
-        console.log(`--> Waiting for custom waiting criteria ${Date.now() - beginTime}ms`);
+        initializingTime = Date.now() - beginTime;
+        console.log(`--> Waiting for custom waiting criteria ${initializingTime}ms`);
     }
     await page.screenshot({ path: join(exportDir, "current", config.group + config.name + ".png"), type: "png" });
+    await writeJSON(join(exportDir, "meta", config.group + config.name + ".png"), {
+        config,
+        loadTime,
+        initializingTime,
+        logs
+    });
 }
 
 test();
