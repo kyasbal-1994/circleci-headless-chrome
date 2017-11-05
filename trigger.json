@@ -1,7 +1,7 @@
 {
-  "urlSuffix": "#gltf=staging-6a6c9648fcb6ba00070f7ea40e7c64aa36e9e3bb",
-  "destination": "gltf/feat/customizable-material/360",
-  "previous": "gltf/feat/customizable-material/359",
+  "urlSuffix": "#gltf=staging-f9b4eeb5f947ae50061180ae83618173077bddeb",
+  "destination": "gltf/feat/customizable-material/361",
+  "previous": "gltf/feat/customizable-material/360",
   "sha": "570f7d2a86d69f0e0bce62f107e063def244cdaa",
   "repository": "GrimoireGL/grimoirejs-gltf",
   "prNumber": "106"
