@@ -1,8 +1,8 @@
 {
-  "urlSuffix": "#grimoirejs=staging-b9da241cfabd90962c29c7c99938c38e515b7956",
-  "destination": "grimoirejs/chore/ci-staging-e2e/1111",
-  "previous": "grimoirejs/chore/ci-staging-e2e/1110",
-  "sha": "2e3fafb92cf455c78e38657c0c709766ff4c9b54",
-  "repository": "GrimoireGL/GrimoireJS",
-  "prNumber": "542"
+  "urlSuffix": "#fundamental=staging-6739d86fe3b84023fa9e5cc9c274b9aa13596768",
+  "destination": "fundamental/feat/0.30.0/776",
+  "previous": "fundamental/feat/0.30.0/775",
+  "sha": "bb1c2ad7cd08c7db22e7f5ddc908e3963824e1f0",
+  "repository": "GrimoireGL/grimoirejs-fundamental",
+  "prNumber": "154"
 }
