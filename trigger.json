@@ -1,7 +1,8 @@
 {
-  "urlSuffix": "#gltf=staging-229e2a859d785d114b7f4d5991d7fbbf27af988e",
-  "destination": "gltf/fix/e2e-testing/373",
-  "previous": "gltf/fix/e2e-testing/371",
-  "sha": "052f5e69cf4cba5d4e8621d437e4f2629a5d3dd1",
-  "repository": "GrimoireGL/grimoirejs-gltf"
+  "urlSuffix": "#grimoirejs=staging-a1a39e804d8d59037c16ae100cd12a16665f342f",
+  "destination": "grimoirejs/chore/ci-staging-e2e/1110",
+  "previous": "grimoirejs/chore/ci-staging-e2e/1109",
+  "sha": "d40a32b89b5eaafafab5b150fe7a6b527bc7dd3f",
+  "repository": "GrimoireGL/GrimoireJS",
+  "prNumber": "542"
 }
