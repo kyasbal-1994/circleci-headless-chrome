@@ -60,7 +60,7 @@ async function test() {
     downloadPrevious(trigger.previous);
     for (let i = 0; i < filteredConfig.length; i++) {
         const config = filteredConfig[i];
-        diff(config.group + config.name)
+        diff(config.group + config.name, config)
     }
     execSync(`sh -x ./request-result.sh ${trigger.repository}`)
 }
@@ -73,9 +73,15 @@ function downloadPrevious(folder: string) {
     console.log(execSync(`sh -x download.sh ${folder}`).toString());
 }
 
-async function diff(fileNameWithoutExt: string) {
+async function diff(fileNameWithoutExt: string, config: IE2ETest) {
     try {
-        console.log(execSync(`sh -x diff.sh ${fileNameWithoutExt + ".png"}`).toString());
+        let type = "pixel";
+        let threshold = parseFloat(config.threshold);
+        if (config.threshold.charAt(config.threshold.length - 1) === "%") {
+            type = "percent";
+            threshold = parseFloat(config.threshold) / 100;
+        }
+        console.log(execSync(`sh -x diff.sh ${fileNameWithoutExt + ".png"} ${config.shift} ${type} ${threshold}`).toString());
     } catch (e) {
         const data = await readJSON(join(exportDir, "meta", fileNameWithoutExt + ".json")) as any;
         data.diffTestResult = false;

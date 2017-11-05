@@ -8,7 +8,9 @@ const defaultConfig = {
     timeout: 100000,
     waitFor: null,
     width: 640,
-    height: 480
+    height: 480,
+    threshold: "3%",
+    shift: 2
 } as IE2ETest;
 export default class ConfigParser {
 

@@ -6,4 +6,6 @@ export default interface IE2ETest {
     name?: string;
     width?: number;
     height?: number;
+    shift?: number;
+    threshold: string;
 }
