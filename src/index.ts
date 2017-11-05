@@ -52,7 +52,7 @@ async function test() {
     execSync(`mkdir -p ${exportDir}/current`)
     execSync(`mkdir -p ${exportDir}/meta`)
     for (let i = 0; i < filteredConfig.length; i++) {
-        await captureWithPage(page, filteredConfig[i], logs);
+        await captureWithPage(page, filteredConfig[i], logs, trigger.urlSuffix);
         logs.splice(0, logs.length);
     }
     await browser.close();
@@ -83,12 +83,13 @@ async function diff(fileNameWithoutExt: string) {
     }
 }
 
-async function captureWithPage(page: Page, config: IE2ETest, logs: any[]) {
+async function captureWithPage(page: Page, config: IE2ETest, logs: any[], suffix: string) {
     let loadTime: number, initializingTime: number;
     await page.setViewport({ width: config.width, height: config.height });
     console.log(`[E2E TEST (${config.group} - ${config.name})] (${config.url})`);
     let beginTime = Date.now();
-    await page.goto(config.url);
+    const url = config.url + suffix;
+    await page.goto(url);
     loadTime = Date.now() - beginTime;
     console.log(`--> Loaded in ${loadTime}ms`);
     beginTime = Date.now();
@@ -106,7 +107,8 @@ async function captureWithPage(page: Page, config: IE2ETest, logs: any[]) {
         loadTime,
         initializingTime,
         logs,
-        diffTestResult: true
+        diffTestResult: true,
+        url
     });
 }
 
