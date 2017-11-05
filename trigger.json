@@ -1,8 +1,8 @@
 {
   "urlSuffix": "",
-  "destination": "gltf/feat/customizable-material/353",
-  "previous": "gltf/feat/customizable-material/352",
-  "sha": "3ae526cc4b4f2428802f70d07ced19368c33dc7f",
+  "destination": "gltf/feat/customizable-material/354",
+  "previous": "gltf/feat/customizable-material/353",
+  "sha": "4f628ad04387d152cec9b20a23097c946b0d8a66",
   "repository": "GrimoireGL/grimoirejs-gltf",
   "prNumber": "105"
 }
