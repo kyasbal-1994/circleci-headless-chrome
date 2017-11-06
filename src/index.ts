@@ -98,7 +98,9 @@ async function captureWithPage(page: Page, config: IE2ETest, logs: any[], suffix
     loadTime = Date.now() - beginTime;
     console.log(`--> Loaded in ${loadTime}ms`);
     beginTime = Date.now();
-    await page.waitFor("canvas.gr-resource-loaded-canvas");
+    await page.waitFor("canvas.gr-resource-loaded-canvas", {
+        timeout: config.timeout
+    });
     console.log(`--> Grimoire.js got ready state to render in ${Date.now() - beginTime}ms`);
     if (config.waitFor !== null) {
         beginTime = Date.now();
