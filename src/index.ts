@@ -89,34 +89,45 @@ async function diff(fileNameWithoutExt: string, config: IE2ETest) {
 }
 
 async function captureWithPage(page: Page, config: IE2ETest, logs: any[], suffix: string) {
-    let loadTime: number, initializingTime: number;
-    await page.setViewport({ width: config.width, height: config.height });
-    console.log(`[E2E TEST (${config.group} - ${config.name})] (${config.url})`);
-    let beginTime = Date.now();
     const url = config.url + suffix;
-    await page.goto(url);
-    loadTime = Date.now() - beginTime;
-    console.log(`--> Loaded in ${loadTime}ms`);
-    beginTime = Date.now();
-    await page.waitFor("canvas.gr-resource-loaded-canvas", {
-        timeout: config.timeout
-    });
-    console.log(`--> Grimoire.js got ready state to render in ${Date.now() - beginTime}ms`);
-    if (config.waitFor !== null) {
+    try {
+        let loadTime: number, initializingTime: number;
+        await page.setViewport({ width: config.width, height: config.height });
+        console.log(`[E2E TEST (${config.group} - ${config.name})] (${config.url})`);
+        let beginTime = Date.now();
+        await page.goto(url);
+        loadTime = Date.now() - beginTime;
+        console.log(`--> Loaded in ${loadTime}ms`);
         beginTime = Date.now();
-        await page.waitFor(config.waitFor);
-        initializingTime = Date.now() - beginTime;
-        console.log(`--> Waiting for custom waiting criteria ${initializingTime}ms`);
+        await page.waitFor("canvas.gr-resource-loaded-canvas", {
+            timeout: config.timeout
+        });
+        console.log(`--> Grimoire.js got ready state to render in ${Date.now() - beginTime}ms`);
+        if (config.waitFor !== null) {
+            beginTime = Date.now();
+            await page.waitFor(config.waitFor);
+            initializingTime = Date.now() - beginTime;
+            console.log(`--> Waiting for custom waiting criteria ${initializingTime}ms`);
+        }
+        await page.screenshot({ path: join(exportDir, "current", config.group + config.name + ".png"), type: "png" });
+        await writeJSON(join(exportDir, "meta", config.group + config.name + ".json"), {
+            config,
+            loadTime,
+            initializingTime,
+            logs,
+            diffTestResult: true,
+            url
+        });
+    } catch (e) {
+        await writeJSON(join(exportDir, "meta", config.group + config.name + ".json"), {
+            config,
+            "FAIL",
+            "FAIL",
+            logs,
+            diffTestResult: false,
+            url
+        });
     }
-    await page.screenshot({ path: join(exportDir, "current", config.group + config.name + ".png"), type: "png" });
-    await writeJSON(join(exportDir, "meta", config.group + config.name + ".json"), {
-        config,
-        loadTime,
-        initializingTime,
-        logs,
-        diffTestResult: true,
-        url
-    });
 }
 
 test();
