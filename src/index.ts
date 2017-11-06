@@ -121,8 +121,8 @@ async function captureWithPage(page: Page, config: IE2ETest, logs: any[], suffix
     } catch (e) {
         await writeJSON(join(exportDir, "meta", config.group + config.name + ".json"), {
             config,
-            "FAIL",
-            "FAIL",
+            loadTime: "FAIL",
+            initializingTime: "FAIL",
             logs,
             diffTestResult: false,
             url
