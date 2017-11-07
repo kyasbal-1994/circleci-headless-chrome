@@ -1,7 +1,7 @@
 {
-  "urlSuffix": "#gltf=staging-0ee531b82cfcfa1caeb09de823ecd4e90863e931",
-  "destination": "gltf/master/383",
-  "previous": "gltf/master/381",
-  "sha": "0ee531b82cfcfa1caeb09de823ecd4e90863e931",
+  "urlSuffix": "#gltf=staging-9f50d6eebb5c270d243386f5ec8c13bc6ea886ab",
+  "destination": "gltf/fix/e2e-testing/384",
+  "previous": "gltf/fix/e2e-testing/382",
+  "sha": "9f50d6eebb5c270d243386f5ec8c13bc6ea886ab",
   "repository": "GrimoireGL/grimoirejs-gltf"
 }
