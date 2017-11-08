@@ -1,7 +1,13 @@
 {
-  "urlSuffix": "#fundamental=staging-77d98c2062097d1ad608e186ba906fb56bafadf2",
-  "destination": "fundamental/master/793",
-  "previous": "fundamental/master/790",
-  "sha": "77d98c2062097d1ad608e186ba906fb56bafadf2",
-  "repository": "GrimoireGL/grimoirejs-fundamental"
+  "urlSuffix": "#fundamental=staging-b235b5acb4a0bb6632f1637663230c7dc0e27335",
+  "destination": "fundamental/e2e-test/797",
+  "previous": "fundamental/e2e-test/796",
+  "sha": "b235b5acb4a0bb6632f1637663230c7dc0e27335",
+  "previousSHA": {
+    "sha": "25312da210f5508e9c67f3c24e89b6653496ecc6",
+    "url": "https://api.github.com/repos/GrimoireGL/grimoirejs-fundamental/commits/25312da210f5508e9c67f3c24e89b6653496ecc6",
+    "html_url": "https://github.com/GrimoireGL/grimoirejs-fundamental/commit/25312da210f5508e9c67f3c24e89b6653496ecc6"
+  },
+  "repository": "GrimoireGL/grimoirejs-fundamental",
+  "prNumber": "161"
 }
