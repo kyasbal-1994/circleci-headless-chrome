@@ -56,20 +56,20 @@ async function test() {
         logs.splice(0, logs.length);
     }
     await browser.close();
-    sendToS3(trigger.destination);
-    downloadPrevious(trigger.previous);
+    sendToS3(trigger.sha);
+    downloadPrevious(trigger.previousSHA);
     for (let i = 0; i < filteredConfig.length; i++) {
         const config = filteredConfig[i];
         diff(config.group + config.name, config)
     }
 }
 
-function sendToS3(folder: string) {
-    console.log(execSync(`sh -x upload.sh ${folder}`).toString());
+function sendToS3(sha: string) {
+    console.log(execSync(`sh -x upload.sh ${sha}`).toString());
 }
 
-function downloadPrevious(folder: string) {
-    console.log(execSync(`sh -x download.sh ${folder}`).toString());
+function downloadPrevious(previousSHA: string) {
+    console.log(execSync(`sh -x download.sh ${previousSHA}`).toString());
 }
 
 async function diff(fileNameWithoutExt: string, config: IE2ETest) {
