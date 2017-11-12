@@ -1,6 +1,8 @@
 texture-direction: 'https://codepen.io/kyasbal-1994/debug/gXMBJV'
 uv: 'https://codepen.io/kyasbal-1994/debug/vWXLLK'
 normal: 'https://codepen.io/kyasbal-1994/debug/RjGroo'
+wireframe : 'https://codepen.io/kyasbal-1994/debug/MOmjyJ'
 canvasFollowRelative: 'https://codepen.io/kyasbal-1994/debug/bf323f6b9725ceb75f0865d6dddd68b9'
 canvasConsiderBorder: 'https://codepen.io/kyasbal-1994/debug/d448653295e3678bdbbc626bf9192f79'
 dynamicParentSizeChange: 'https://codepen.io/kyasbal-1994/debug/074bef092e7a50ed3e33fe7c75c923e6'
+drawerContext: 'https://codepen.io/kyasbal-1994/debug/b26f4b576f96d077eb0aab1d6b88668f'
