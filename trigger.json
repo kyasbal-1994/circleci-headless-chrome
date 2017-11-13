@@ -1,8 +1,7 @@
 {
-  "urlSuffix": "#forward-shading=staging-8ec530b92042611434208f89a55169f98d3c1202",
-  "destination": "forward-shading/feat/fundamental-0.30.0/238",
-  "sha": "8ec530b92042611434208f89a55169f98d3c1202",
-  "previousSHA": "3a73505c675033f49ccb82bfb799c77d8248f8c5",
-  "repository": "GrimoireGL/grimoirejs-forward-shading",
-  "prNumber": "51"
+  "urlSuffix": "#forward-shading=staging-b8954279cacdb39cdd5bfe8b676930e5c83073e3",
+  "destination": "forward-shading/master/239",
+  "sha": "b8954279cacdb39cdd5bfe8b676930e5c83073e3",
+  "previousSHA": "81d6be41686c4e26e4d6589a3e9fc8fbb30460a2",
+  "repository": "GrimoireGL/grimoirejs-forward-shading"
 }
