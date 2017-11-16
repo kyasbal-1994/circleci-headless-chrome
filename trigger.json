@@ -1,7 +1,7 @@
 {
-  "urlSuffix": "#fundamental=staging-d8378bfc2a58d568033d40d56d4aaecb3c504cf7",
-  "destination": "fundamental/master/823",
-  "sha": "d8378bfc2a58d568033d40d56d4aaecb3c504cf7",
-  "previousSHA": "037f38755f9bfbda1e6f846ea1b8185b8bcb2159",
-  "repository": "GrimoireGL/grimoirejs-fundamental"
+  "urlSuffix": "#forward-shading=staging-f3b10bf2772086ec5172f1a05544aa2a1375d3d0",
+  "destination": "forward-shading/greenkeeper/grimoirejs-fundamental-0.33.0/240",
+  "sha": "f3b10bf2772086ec5172f1a05544aa2a1375d3d0",
+  "previousSHA": "b8954279cacdb39cdd5bfe8b676930e5c83073e3",
+  "repository": "GrimoireGL/grimoirejs-forward-shading"
 }
