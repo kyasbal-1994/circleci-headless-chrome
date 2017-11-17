@@ -1,7 +1,7 @@
 {
-  "urlSuffix": "#gltf=staging-066dc1d64294ffa9ed8aeac0d7a559d821f046ee",
-  "destination": "gltf/greenkeeper/grimoirejs-fundamental-0.33.0/394",
-  "sha": "066dc1d64294ffa9ed8aeac0d7a559d821f046ee",
-  "previousSHA": "6d5607f2cbd39183cad2e4e682f01702a814ef2d",
-  "repository": "GrimoireGL/grimoirejs-gltf"
+  "urlSuffix": "#fundamental=staging-adc1a90826054342ecef1dc339dd6542360405d7",
+  "destination": "fundamental/feat/mouse-camera-control-with-mobile-phone/824",
+  "sha": "adc1a90826054342ecef1dc339dd6542360405d7",
+  "previousSHA": "d8378bfc2a58d568033d40d56d4aaecb3c504cf7",
+  "repository": "GrimoireGL/grimoirejs-fundamental"
 }
