@@ -1,7 +1,7 @@
 {
-  "urlSuffix": "#grimoirejs=staging-bcbf01a9e711cc8237703de4d366d14c5c270e54",
-  "destination": "grimoirejs/greenkeeper/jsdom-11.5.0/1116",
-  "sha": "bcbf01a9e711cc8237703de4d366d14c5c270e54",
+  "urlSuffix": "#grimoirejs=staging-1ca969e036626e0700bf1f2df3c8e10456e08b87",
+  "destination": "grimoirejs/greenkeeper/jsdom-11.5.1/1117",
+  "sha": "1ca969e036626e0700bf1f2df3c8e10456e08b87",
   "previousSHA": "9298762cac2a95e729707e129fea76e1de6b9c0a",
   "repository": "GrimoireGL/GrimoireJS"
 }
