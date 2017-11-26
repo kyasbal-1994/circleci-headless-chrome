@@ -1,1 +1,8 @@
-ewogICJ1cmxTdWZmaXgiOiAiI2dsdGY9c3RhZ2luZy03ODdhNzk4ZmQ5MDkzZDNiZTg5MTNlMjdlYjIyZWJhOWFmZGUzNThiIiwKICAiZGVzdGluYXRpb24iOiAiZ2x0Zi9mZWF0L21vZGVsTWV0YS8zOTYiLAogICJzaGEiOiAiNzg3YTc5OGZkOTA5M2QzYmU4OTEzZTI3ZWIyMmViYTlhZmRlMzU4YiIsCiAgInByZXZpb3VzU0hBIjogIjUyNThkMWY2YTBjN2JlMDJhMjQ4Y2E5ZTBlYTY3NmZhZDZmMzViNjQiLAogICJyZXBvc2l0b3J5IjogIkdyaW1vaXJlR0wvZ3JpbW9pcmVqcy1nbHRmIiwKICAicHJOdW1iZXIiOiAiMTEyIgp9
+{
+  "urlSuffix": "#gltf=staging-aeccc8c1fcf314979ba468639c36b9a1e371168e",
+  "destination": "gltf/feat/modelMeta/397",
+  "sha": "aeccc8c1fcf314979ba468639c36b9a1e371168e",
+  "previousSHA": "787a798fd9093d3be8913e27eb22eba9afde358b",
+  "repository": "GrimoireGL/grimoirejs-gltf",
+  "prNumber": "112"
+}
