@@ -1,7 +1,7 @@
 {
-  "urlSuffix": "#fundamental=staging-81c82b0818189699f35b28dfd673dbbe12e0a25d",
-  "destination": "fundamental/greenkeeper/ava-0.24.0/827",
-  "sha": "81c82b0818189699f35b28dfd673dbbe12e0a25d",
-  "previousSHA": "24dd79bc17df16c6544ca12a41933f7bffbf9966",
-  "repository": "GrimoireGL/grimoirejs-fundamental"
+  "urlSuffix": "#gltf=staging-0faaeffe6a15fa28de008ddcaea3b40b9d0d0454",
+  "destination": "gltf/greenkeeper/ava-0.24.0/399",
+  "sha": "0faaeffe6a15fa28de008ddcaea3b40b9d0d0454",
+  "previousSHA": "6d5607f2cbd39183cad2e4e682f01702a814ef2d",
+  "repository": "GrimoireGL/grimoirejs-gltf"
 }
