@@ -1,7 +1,7 @@
 {
-  "urlSuffix": "#grimoirejs=staging-45728e65dcf6514dce252cbf922632512aa9d386",
-  "destination": "grimoirejs/greenkeeper/typescript-2.6.2/1119",
-  "sha": "45728e65dcf6514dce252cbf922632512aa9d386",
-  "previousSHA": "9298762cac2a95e729707e129fea76e1de6b9c0a",
-  "repository": "GrimoireGL/GrimoireJS"
+  "urlSuffix": "#gltf=staging-34d62d3db6124a996015f931c20184f61bfd9337",
+  "destination": "gltf/feat/gltf-Embed/400",
+  "sha": "34d62d3db6124a996015f931c20184f61bfd9337",
+  "previousSHA": "50633d8db73f4f53b05a7d7789bc787da554e55a",
+  "repository": "GrimoireGL/grimoirejs-gltf"
 }
