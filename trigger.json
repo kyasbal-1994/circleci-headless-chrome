@@ -1,7 +1,7 @@
 {
-  "urlSuffix": "#animation=staging-2fc31beb8f3caa9d9b911a655d492daaab2c898b",
-  "destination": "animation/master/13",
-  "sha": "2fc31beb8f3caa9d9b911a655d492daaab2c898b",
-  "previousSHA": "11ffec2288f3a92944f3f0b73a27c5fa06049757",
-  "repository": "GrimoireGL/grimoirejs-animation"
+  "urlSuffix": "#gltf=staging-4869ef952d22a04f2ee18a95f378f9d6a457a4b3",
+  "destination": "gltf/greenkeeper/ts-loader-3.2.0/401",
+  "sha": "4869ef952d22a04f2ee18a95f378f9d6a457a4b3",
+  "previousSHA": "6d5607f2cbd39183cad2e4e682f01702a814ef2d",
+  "repository": "GrimoireGL/grimoirejs-gltf"
 }
