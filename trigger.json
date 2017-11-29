@@ -1,7 +1,8 @@
 {
-  "urlSuffix": "#gltf=staging-4869ef952d22a04f2ee18a95f378f9d6a457a4b3",
-  "destination": "gltf/greenkeeper/ts-loader-3.2.0/401",
-  "sha": "4869ef952d22a04f2ee18a95f378f9d6a457a4b3",
-  "previousSHA": "6d5607f2cbd39183cad2e4e682f01702a814ef2d",
-  "repository": "GrimoireGL/grimoirejs-gltf"
+  "urlSuffix": "#fundamental=staging-78e25db49b22af3fcbae2401cb60ecca9a32f62d",
+  "destination": "fundamental/greenkeeper/ts-loader-3.2.0/828",
+  "sha": "78e25db49b22af3fcbae2401cb60ecca9a32f62d",
+  "previousSHA": "24dd79bc17df16c6544ca12a41933f7bffbf9966",
+  "repository": "GrimoireGL/grimoirejs-fundamental",
+  "prNumber": "175"
 }
