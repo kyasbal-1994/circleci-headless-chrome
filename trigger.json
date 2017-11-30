@@ -1,7 +1,7 @@
 {
-  "urlSuffix": "#forward-shading=staging-8bb834d2fefd2e3bda4a8a1b8636c4e9b8e35406",
-  "destination": "forward-shading/greenkeeper/ts-loader-3.2.0/242",
-  "sha": "8bb834d2fefd2e3bda4a8a1b8636c4e9b8e35406",
-  "previousSHA": "b8954279cacdb39cdd5bfe8b676930e5c83073e3",
-  "repository": "GrimoireGL/grimoirejs-forward-shading"
+  "urlSuffix": "#grimoirejs=staging-acb5acbeb68070dab2a960a00c7a573a37b84af0",
+  "destination": "grimoirejs/greenkeeper/webpack-3.9.0/1122",
+  "sha": "acb5acbeb68070dab2a960a00c7a573a37b84af0",
+  "previousSHA": "9298762cac2a95e729707e129fea76e1de6b9c0a",
+  "repository": "GrimoireGL/GrimoireJS"
 }
