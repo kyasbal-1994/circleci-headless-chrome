@@ -1,7 +1,7 @@
 {
-  "urlSuffix": "#animation=staging-dc8c058ce3afb252ca9c3c527f3429f8427a042a",
-  "destination": "animation/develop/14",
-  "sha": "dc8c058ce3afb252ca9c3c527f3429f8427a042a",
+  "urlSuffix": "#animation=staging-666db43efb0410f38a581750c02247e36a5e5d12",
+  "destination": "animation/master/15",
+  "sha": "666db43efb0410f38a581750c02247e36a5e5d12",
   "previousSHA": "2fc31beb8f3caa9d9b911a655d492daaab2c898b",
   "repository": "GrimoireGL/grimoirejs-animation"
 }
