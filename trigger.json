@@ -1,7 +1,7 @@
 {
-  "urlSuffix": "#gltf=staging-b044276afe903c377654d6c80eca155d77940593",
-  "destination": "gltf/greenkeeper/grimoirejs-fundamental-0.34.1/408",
-  "sha": "b044276afe903c377654d6c80eca155d77940593",
-  "previousSHA": "7a3f80811a82a256d24361f877aa44e6c73baa35",
-  "repository": "GrimoireGL/grimoirejs-gltf"
+  "urlSuffix": "#animation=staging-dc8c058ce3afb252ca9c3c527f3429f8427a042a",
+  "destination": "animation/develop/14",
+  "sha": "dc8c058ce3afb252ca9c3c527f3429f8427a042a",
+  "previousSHA": "2fc31beb8f3caa9d9b911a655d492daaab2c898b",
+  "repository": "GrimoireGL/grimoirejs-animation"
 }
