@@ -1,7 +1,7 @@
 {
-  "urlSuffix": "#fundamental=staging-4ef289911050c681473aea17a7c385336fb505d9",
-  "destination": "fundamental/greenkeeper/condition-circle-2.0.1/844",
-  "sha": "4ef289911050c681473aea17a7c385336fb505d9",
-  "previousSHA": "2221631de8676c7b591ccfa30fd5a74aecdceeff",
-  "repository": "GrimoireGL/grimoirejs-fundamental"
+  "urlSuffix": "#grimoirejs=staging-382b8175adfc534691a8c5350d9a0a64e4a1dc95",
+  "destination": "grimoirejs/greenkeeper/condition-circle-2.0.1/1129",
+  "sha": "382b8175adfc534691a8c5350d9a0a64e4a1dc95",
+  "previousSHA": "9298762cac2a95e729707e129fea76e1de6b9c0a",
+  "repository": "GrimoireGL/GrimoireJS"
 }
