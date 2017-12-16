@@ -1,8 +1,8 @@
 {
-  "urlSuffix": "#grimoirejs=staging-b5e09c995c568b3649469843e69bdd8f3c863cdf",
-  "destination": "grimoirejs/refactor/1130",
-  "sha": "b5e09c995c568b3649469843e69bdd8f3c863cdf",
-  "previousSHA": "a0a788a6941b531106c18b59b8622838690f4c10",
+  "urlSuffix": "#grimoirejs=staging-15f7f64bc523550b10c8a757980e1a3963258363",
+  "destination": "grimoirejs/refactor/1133",
+  "sha": "15f7f64bc523550b10c8a757980e1a3963258363",
+  "previousSHA": "b5e09c995c568b3649469843e69bdd8f3c863cdf",
   "repository": "GrimoireGL/GrimoireJS",
   "prNumber": "533"
 }
