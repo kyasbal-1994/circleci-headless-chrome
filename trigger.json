@@ -1,8 +1,7 @@
 {
-  "urlSuffix": "#forward-shading=staging-2c21bfef32e1e82cfdd36e41a38f860b8adb3ff4",
-  "destination": "forward-shading/core1.0.0/247",
-  "sha": "2c21bfef32e1e82cfdd36e41a38f860b8adb3ff4",
-  "previousSHA": "b8954279cacdb39cdd5bfe8b676930e5c83073e3",
-  "repository": "GrimoireGL/grimoirejs-forward-shading",
-  "prNumber": "53"
+  "urlSuffix": "#fundamental=staging-aea23321169370814e62a070bd0399285458792c",
+  "destination": "fundamental/greenkeeper/semantic-release-11.0.2/855",
+  "sha": "aea23321169370814e62a070bd0399285458792c",
+  "previousSHA": "2221631de8676c7b591ccfa30fd5a74aecdceeff",
+  "repository": "GrimoireGL/grimoirejs-fundamental"
 }
