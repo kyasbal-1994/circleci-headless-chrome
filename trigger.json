@@ -1,8 +1,8 @@
 {
-  "urlSuffix": "#fundamental=staging-8fc1bec4a807f3bbe90f44ac87988effd17b08b3",
-  "destination": "fundamental/feat/0.33.0/862",
-  "sha": "8fc1bec4a807f3bbe90f44ac87988effd17b08b3",
-  "previousSHA": "a83a51397c4dee6bb07acbab10734157354c4462",
-  "repository": "GrimoireGL/grimoirejs-fundamental",
-  "prNumber": "180"
+  "urlSuffix": "#animation=staging-27ee608873aa9a0e9a40eeac332dc9c8346b6e1a",
+  "destination": "animation/core1.0.0/17",
+  "sha": "27ee608873aa9a0e9a40eeac332dc9c8346b6e1a",
+  "previousSHA": "37fbd52b932f5976745c8f6475eae0510c82c499",
+  "repository": "GrimoireGL/grimoirejs-animation",
+  "prNumber": "3"
 }
