@@ -1,7 +1,7 @@
 {
-  "urlSuffix": "#fundamental=staging-be7260bdbc61f02edd3cedd4bdfdebd422eb5a37",
-  "destination": "fundamental/greenkeeper/http-server-0.11.0/866",
-  "sha": "be7260bdbc61f02edd3cedd4bdfdebd422eb5a37",
-  "previousSHA": "2221631de8676c7b591ccfa30fd5a74aecdceeff",
-  "repository": "GrimoireGL/grimoirejs-fundamental"
+  "urlSuffix": "#grimoirejs=staging-4519ef8351ea1a666021345f53adf7a5bc9370c3",
+  "destination": "grimoirejs/feat/add-many-hooks/1172",
+  "sha": "4519ef8351ea1a666021345f53adf7a5bc9370c3",
+  "previousSHA": "8dfaa0570273efe6f6bd8d7938285610a3f6ab04",
+  "repository": "GrimoireGL/GrimoireJS"
 }
