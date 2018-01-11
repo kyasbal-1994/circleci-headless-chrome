@@ -1,8 +1,8 @@
 {
-  "urlSuffix": "#grimoirejs=staging-3818cb6aeea1ffd4808b1e543b5fe693f948a2fb",
-  "destination": "grimoirejs/greenkeeper/ava-0.23.0/1177",
-  "sha": "3818cb6aeea1ffd4808b1e543b5fe693f948a2fb",
-  "previousSHA": "d17006436f6a1faba2266f059c702677611d4076",
+  "urlSuffix": "#grimoirejs=staging-6738fe10f5fdbf5a73c55576d75d06670d3bfb8c",
+  "destination": "grimoirejs/develop/1178",
+  "sha": "6738fe10f5fdbf5a73c55576d75d06670d3bfb8c",
+  "previousSHA": "5bb3a898efbb2ab02187ac6f25622fa1edf2c467",
   "repository": "GrimoireGL/GrimoireJS",
-  "prNumber": "539"
+  "prNumber": "546"
 }
