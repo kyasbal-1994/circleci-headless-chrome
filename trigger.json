@@ -1,7 +1,8 @@
 {
   "urlSuffix": "#grimoirejs=staging-5bb3a898efbb2ab02187ac6f25622fa1edf2c467",
-  "destination": "grimoirejs/feat/add-many-hooks/1174",
+  "destination": "grimoirejs/develop/1173",
   "sha": "5bb3a898efbb2ab02187ac6f25622fa1edf2c467",
   "previousSHA": "4519ef8351ea1a666021345f53adf7a5bc9370c3",
-  "repository": "GrimoireGL/GrimoireJS"
+  "repository": "GrimoireGL/GrimoireJS",
+  "prNumber": "546"
 }
