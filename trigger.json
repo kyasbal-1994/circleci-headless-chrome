@@ -1,7 +1,7 @@
 {
-  "urlSuffix": "#grimoirejs=staging-ab1eeb0519664ee3860781959dd5d3689b41a121",
-  "destination": "grimoirejs/greenkeeper/remap-istanbul-0.10.0/1184",
-  "sha": "ab1eeb0519664ee3860781959dd5d3689b41a121",
+  "urlSuffix": "#grimoirejs=staging-8ef20a3ac14666a20b65cd8dcafc52895e3c6695",
+  "destination": "grimoirejs/greenkeeper/remap-istanbul-0.10.0/1185",
+  "sha": "8ef20a3ac14666a20b65cd8dcafc52895e3c6695",
   "previousSHA": "70ca6d53577b134ba873fcb79dc6cca9c2c6b9ef",
   "repository": "GrimoireGL/GrimoireJS",
   "prNumber": "552"
