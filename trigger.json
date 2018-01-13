@@ -1,7 +1,7 @@
 {
-  "urlSuffix": "#forward-shading=staging-0159e3cc5f1c00cb8b402bd1cae5e8176817069c",
-  "destination": "forward-shading/greenkeeper/semantic-release-12.2.2/252",
-  "sha": "0159e3cc5f1c00cb8b402bd1cae5e8176817069c",
-  "previousSHA": "b8954279cacdb39cdd5bfe8b676930e5c83073e3",
-  "repository": "GrimoireGL/grimoirejs-forward-shading"
+  "urlSuffix": "#gltf=staging-3e49d8141ef7846c4bf34b85dab24d1994b1b834",
+  "destination": "gltf/greenkeeper/semantic-release-12.2.2/416",
+  "sha": "3e49d8141ef7846c4bf34b85dab24d1994b1b834",
+  "previousSHA": "7a3f80811a82a256d24361f877aa44e6c73baa35",
+  "repository": "GrimoireGL/grimoirejs-gltf"
 }
