@@ -1,7 +1,7 @@
 {
-  "urlSuffix": "#fundamental=staging-6504ae4f935c728ec49ae0c06e661b52cd35e663",
-  "destination": "fundamental/greenkeeper/sinon-4.2.3/916",
-  "sha": "6504ae4f935c728ec49ae0c06e661b52cd35e663",
+  "urlSuffix": "#fundamental=staging-61f4256186eaa36547a5c7092c00504af56d93a2",
+  "destination": "fundamental/greenkeeper/sinon-4.3.0/917",
+  "sha": "61f4256186eaa36547a5c7092c00504af56d93a2",
   "previousSHA": "2221631de8676c7b591ccfa30fd5a74aecdceeff",
   "repository": "GrimoireGL/grimoirejs-fundamental"
 }
