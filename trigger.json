@@ -1,8 +1,8 @@
 {
-  "urlSuffix": "#math=staging-31c111cd76f6cd3374820c96e1943099635fe846",
-  "destination": "math/core1.0.0/290",
-  "sha": "31c111cd76f6cd3374820c96e1943099635fe846",
-  "previousSHA": "4a8d627bcefd815108379cb7263eab3929f66f6e",
+  "urlSuffix": "#math=staging-c26a7430dcd129587aa5b504fb6dd8b592f87b8c",
+  "destination": "math/core1.0.0/291",
+  "sha": "c26a7430dcd129587aa5b504fb6dd8b592f87b8c",
+  "previousSHA": "252570af2344bf1bba7fd6ec34c38a14b8cbb21c",
   "repository": "GrimoireGL/grimoirejs-math",
   "prNumber": "59"
 }
