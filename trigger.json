@@ -1,8 +1,8 @@
 {
-  "urlSuffix": "#fundamental=staging-8beb92048fd1e2e6891d31484cf910cb2cffaa6f",
-  "destination": "fundamental/feat/reactive-geometry/922",
-  "sha": "8beb92048fd1e2e6891d31484cf910cb2cffaa6f",
-  "previousSHA": "791ffde710fdbdc4904321958c04d4b87f9d1443",
+  "urlSuffix": "#fundamental=staging-e50b0888fc398f6c5a63aa5388f2d640b1db6e69",
+  "destination": "fundamental/develop/924",
+  "sha": "e50b0888fc398f6c5a63aa5388f2d640b1db6e69",
+  "previousSHA": "1788608057da16820ec9551f20d6c111eb853229",
   "repository": "GrimoireGL/grimoirejs-fundamental",
-  "prNumber": "186"
+  "prNumber": "188"
 }
