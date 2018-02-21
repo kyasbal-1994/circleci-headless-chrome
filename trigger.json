@@ -1,7 +1,7 @@
 {
-  "urlSuffix": "#grimoirejs=staging-eb1198da0196b0cbf8e73d338b0052b05748d35c",
-  "destination": "grimoirejs/feat/decorators/1245",
-  "sha": "eb1198da0196b0cbf8e73d338b0052b05748d35c",
-  "previousSHA": "8b158e02359e93f858367e8c2ec47c3e646d0b0b",
+  "urlSuffix": "#grimoirejs=staging-1f0c16b59b8529f0e6181b0f50798c92a68246f6",
+  "destination": "grimoirejs/feat/decorators/1247",
+  "sha": "1f0c16b59b8529f0e6181b0f50798c92a68246f6",
+  "previousSHA": "9cf5d6be02d2941213e698800ec8534a3a52f430",
   "repository": "GrimoireGL/GrimoireJS"
 }
