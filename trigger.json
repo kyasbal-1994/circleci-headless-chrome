@@ -1,7 +1,8 @@
 {
-  "urlSuffix": "#gltf=staging-8d61b1c3a8a2cd68422735f9b622d0ca6be03a53 ",
-  "destination": "gltf/greenkeeper/semantic-release-15.0.2/435",
-  "sha": "8d61b1c3a8a2cd68422735f9b622d0ca6be03a53",
-  "previousSHA": "7a3f80811a82a256d24361f877aa44e6c73baa35",
-  "repository": "GrimoireGL/grimoirejs-gltf"
+  "urlSuffix": "#grimoirejs=beta&math=beta&fundamental=staging-505d2c424e882bcafdf616c6b1fb85cb88f2c02f ",
+  "destination": "fundamental/develop/971",
+  "sha": "505d2c424e882bcafdf616c6b1fb85cb88f2c02f",
+  "previousSHA": "95f484660ac1909a78f16ddb483cb43495d63ae4",
+  "repository": "GrimoireGL/grimoirejs-fundamental",
+  "prNumber": "188"
 }
