@@ -13,4 +13,5 @@ test:
   override:
     - npm test:
         parallel: true
+    - sh -x ./summarize.sh
     - sh -x ./request-result.sh
