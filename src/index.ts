@@ -108,6 +108,8 @@ async function captureWithPage(page: Page, config: IE2ETest, logs: any[], suffix
             await page.waitFor(config.waitFor);
             initializingTime = Date.now() - beginTime;
             console.log(`--> Waiting for custom waiting criteria ${initializingTime}ms`);
+        } else {
+            await page.waitFor(200);
         }
         await page.screenshot({ path: join(exportDir, "current", config.group + config.name + ".png"), type: "png" });
         await writeJSON(join(exportDir, "meta", config.group + config.name + ".json"), {
